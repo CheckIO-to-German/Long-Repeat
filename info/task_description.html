@@ -1,24 +1,47 @@
-<p><i><a href="https://py.checkio.org/forum/post/11382/4-mission-ideas-substrings/">There are four substring missions</a> that were born all in one day and you shouldn’t be needed more than one day to solve them. All of those mission can be simply solved by brute force, but is it always the best way to go? (you might not have access to all of those missions yet, but they are going to be available with more opened islands on the map).</i></p>
+<div class="story">
+  <p>
+    <a href="https://py.checkio.org/forum/post/11382/4-mission-ideas-substrings/" target="_blank">
+      There are four substring missions</a>
+    that were all born in one day and you shouldn’t need more than one day to solve them.<br>
+    All these missions can simply be solved by a
+    <a href="https://en.wikipedia.org/wiki/Brute-force_search" target="_blank">
+      brute-force search</a>, but is this always the best way, too?
+  </p>
+  <p>
+    <strong>Note:</strong><br>
+    You may not have access to all these missions yet, but they will become available
+    when you unlock more islands.
+  </p>
+</div>
 
 <p>
-    This mission is the first one of the series. Here you should find the length of the longest substring that consists of the same letter. For example, line "aaabbcaaaa" contains four substrings with the same letters "aaa", "bb","c" and "aaaa". The last substring is the longest one which makes it an answer.
+  This mission is the first of the series.<br>
+  You have to find the length of the longest substring which consists of a single letter.<br>
 </p>
 
-
 <p>
-    <strong>Input: </strong> String.
-
-<p>
-    <strong>Output: </strong> Int. 
+  <strong>An example:</strong><br>
+  The line <em>"aaabbcaaaa"</em> contains four substrings consisting of only one letter:
+  <em>"aaa"</em>, <em>"bb"</em>, <em>"c"</em> and <em>"aaaa"</em>.<br>
+  The last of these substrings &ndash; <em>"aaaa"</em> &ndash; is the longest one, so
+  &ndash; since you have to return the length of the longest substring &ndash; the correct
+  answer is 4.
 </p>
 
+<p>
+  <strong>Input: </strong> A single line as a string.
+</p>
 
+<p>
+    <strong>Output: </strong> The length of the longest substring as in int.
+</p>
 
 <div class="for_info_only">
-    <p>
-        <strong>Example:</strong>
-    </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+  <p>
+      <strong>Examples:</strong>
+  </p>
+  <pre class="brush: python">
+{% if interpreter.slug == "js-node" %}
 longRepeat('sdsffffse') == 4
 longRepeat('ddvvrwwwrggg') == 3
 {% else %}
@@ -26,4 +49,3 @@ long_repeat('sdsffffse') == 4
 long_repeat('ddvvrwwwrggg') == 3
 {% endif %}</pre>
 </div>
-
